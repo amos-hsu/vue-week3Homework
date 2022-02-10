@@ -44,7 +44,7 @@
           <tr v-for="item in products" :key="item.id">
             <td>{{item.categer}}</td>
             <td>{{item.title}}</td>
-            <td class="text-end"></td>
+            <td class="text-end">{{item.origin_price}}</td>
             <td class="text-end">{{item.price}}</td>
             <td>
               <span class="text-success" v-if="item.is_enabled">啟用</span>
